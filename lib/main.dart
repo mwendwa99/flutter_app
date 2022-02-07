@@ -15,21 +15,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gebindo'),
+        title: const Text('Testing'),
         centerTitle: true,
         backgroundColor: Colors.green[300],
       ),
-      body: const Center(
-        child: Text(
-          'Yo bruh siet... \n changes are reflecting!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            color: Colors.teal,
-            fontFamily: 'IndieFLower',
-          ),
-        ),
+      body: Center(
+        child: Image.network(
+            'https://images.unsplash.com/photo-1644242691392-b4005e9ef84c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
