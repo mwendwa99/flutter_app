@@ -32,9 +32,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[300],
       ),
-      body: ListView(
-        children: myArr2,
-      ),
+      body: Center(
+          child: IconButton(
+        onPressed: () {
+          print('you clicked moi');
+        },
+        icon: Icon(Icons.alternate_email),
+        color: Colors.teal,
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text('siet'),
